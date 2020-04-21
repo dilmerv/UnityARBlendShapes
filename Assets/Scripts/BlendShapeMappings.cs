@@ -13,7 +13,7 @@ public class Mapping
 [CreateAssetMenu(fileName = "BlendShapeMapping", menuName = "BlendShapeMappings/Mappings", order = 1)]
 public class BlendShapeMappings : ScriptableObject
 {
-    public const string BLENDSHAPE_EXPRESSION = "ExpressionBlendshape.";
+    public const string BLENDSHAPE_EXPRESSION = "ExpressionBlendshapes.";
 
     public float CoefficientScale = 100.0f;
 
