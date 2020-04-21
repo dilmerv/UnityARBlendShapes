@@ -704,5 +704,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ea5747393b374018b3c095e8211a0be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_CoefficientScale: 100
-  m_SkinnedMeshRenderer: {fileID: 1829134542133439524}
+  blendShapeMappings: {fileID: 11400000, guid: 351cd96121f11e444aaa9edd7287bc33, type: 2}
+  skinnedMeshRenderer: {fileID: 1829134542133439524}
