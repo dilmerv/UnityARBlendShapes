@@ -12,3 +12,109 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7264426151ce8247a859ff8e2fc98ee, type: 3}
   m_Name: BlendShapeMapping
   m_EditorClassIdentifier: 
+  CoefficientScale: 100
+  Mappings:
+  - location: 0
+    name: ExpressionBlendshapes.BrowsD_L
+  - location: 1
+    name: ExpressionBlendshapes.BrowsD_R
+  - location: 2
+    name: ExpressionBlendshapes.BrowsU_C
+  - location: 3
+    name: ExpressionBlendshapes.BrowsU_L
+  - location: 4
+    name: ExpressionBlendshapes.BrowsU_R
+  - location: 5
+    name: ExpressionBlendshapes.CheekPuff
+  - location: 6
+    name: ExpressionBlendshapes.CheekSquint_L
+  - location: 7
+    name: ExpressionBlendshapes.CheekSquint_R
+  - location: 8
+    name: ExpressionBlendshapes.EyeBlink_L
+  - location: 9
+    name: ExpressionBlendshapes.EyeBlink_R
+  - location: 10
+    name: ExpressionBlendshapes.EyeDown_L
+  - location: 11
+    name: ExpressionBlendshapes.EyeDown_R
+  - location: 12
+    name: ExpressionBlendshapes.EyeIn_L
+  - location: 13
+    name: ExpressionBlendshapes.EyeIn_R
+  - location: 14
+    name: ExpressionBlendshapes.EyeOut_L
+  - location: 15
+    name: ExpressionBlendshapes.EyeOut_R
+  - location: 16
+    name: ExpressionBlendshapes.EyeUp_L
+  - location: 17
+    name: ExpressionBlendshapes.EyeUp_R
+  - location: 18
+    name: ExpressionBlendshapes.EyeSquint_L
+  - location: 19
+    name: ExpressionBlendshapes.EyeSquint_R
+  - location: 20
+    name: ExpressionBlendshapes.EyeOpen_L
+  - location: 21
+    name: ExpressionBlendshapes.EyeOpen_R
+  - location: 22
+    name: ExpressionBlendshapes.JawFwd
+  - location: 23
+    name: ExpressionBlendshapes.JawLeft
+  - location: 24
+    name: ExpressionBlendshapes.JawOpen
+  - location: 25
+    name: ExpressionBlendshapes.JawRight
+  - location: 26
+    name: ExpressionBlendshapes.MouthClose
+  - location: 27
+    name: ExpressionBlendshapes.MouthDimple_L
+  - location: 28
+    name: ExpressionBlendshapes.MouthDimple_R
+  - location: 29
+    name: ExpressionBlendshapes.MouthFrown_L
+  - location: 30
+    name: ExpressionBlendshapes.MouthFrown_R
+  - location: 31
+    name: ExpressionBlendshapes.MouthFunnel
+  - location: 32
+    name: ExpressionBlendshapes.MouthLeft
+  - location: 33
+    name: ExpressionBlendshapes.MouthLowerDown_L
+  - location: 34
+    name: ExpressionBlendshapes.MouthLowerDown_R
+  - location: 35
+    name: ExpressionBlendshapes.MouthPress_L
+  - location: 36
+    name: ExpressionBlendshapes.MouthPress_R
+  - location: 37
+    name: ExpressionBlendshapes.MouthPucker
+  - location: 38
+    name: ExpressionBlendshapes.MouthRight
+  - location: 39
+    name: ExpressionBlendshapes.MouthRollLower
+  - location: 40
+    name: ExpressionBlendshapes.MouthRollUpper
+  - location: 41
+    name: ExpressionBlendshapes.MouthShrugLower
+  - location: 42
+    name: ExpressionBlendshapes.MouthShrugUpper
+  - location: 43
+    name: ExpressionBlendshapes.MouthSmile_L
+  - location: 44
+    name: ExpressionBlendshapes.MouthSmile_R
+  - location: 45
+    name: ExpressionBlendshapes.MouthStretch_L
+  - location: 46
+    name: ExpressionBlendshapes.MouthStretch_R
+  - location: 47
+    name: ExpressionBlendshapes.MouthUpperUp_L
+  - location: 48
+    name: ExpressionBlendshapes.MouthUpperUp_R
+  - location: 49
+    name: ExpressionBlendshapes.NoseSneer_L
+  - location: 50
+    name: ExpressionBlendshapes.NoseSneer_R
+  - location: 51
+    name: ExpressionBlendshapes.TongueOut
