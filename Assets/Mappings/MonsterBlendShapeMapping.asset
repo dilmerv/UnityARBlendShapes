@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f7264426151ce8247a859ff8e2fc98ee, type: 3}
-  m_Name: BlendShapeMapping
+  m_Name: MonsterBlendShapeMapping
   m_EditorClassIdentifier: 
   CoefficientScale: 100
   Mappings:
