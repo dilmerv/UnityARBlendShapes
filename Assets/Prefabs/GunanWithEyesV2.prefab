@@ -783,6 +783,7 @@ MonoBehaviour:
   copyRotationFromEyes: 1
   leftEyeReplacement: {fileID: 8075659907454325383}
   rightEyeReplacement: {fileID: 4907521800087031404}
+  eyeUpdateFrequency: 0.1
 --- !u!1 &8075659907454325383
 GameObject:
   m_ObjectHideFlags: 0

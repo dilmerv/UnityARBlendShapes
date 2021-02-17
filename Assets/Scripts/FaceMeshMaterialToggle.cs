@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using TMPro;
+﻿using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,13 +11,13 @@ public class FaceMeshMaterialToggle : MonoBehaviour
     }
 
     [SerializeField]
-    private Material opaqueFaceMeshMaterial;
+    private Material opaqueFaceMeshMaterial = null;
 
     [SerializeField]
-    private Material transparentFaceMeshMaterial;
+    private Material transparentFaceMeshMaterial = null;
 
     [SerializeField]
-    private Button toggleButton;
+    private Button toggleButton = null;
 
     private bool opaqueIsActive = true;
 
