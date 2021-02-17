@@ -13,6 +13,9 @@ MonoBehaviour:
   m_Name: Settings
   m_EditorClassIdentifier: 
   ARCompanionAppIP: 192.168.0.102
+  editorGameViewSettings:
+    resolutionScale: 0.33333334
+    maxEditorViewFps: 10
   arCompanionSettings:
     maxOutgoingMessages: 2
     cameraVideoSettings:
@@ -25,17 +28,14 @@ MonoBehaviour:
     occlusionSettings:
       maxFPS: 10
       resolutionScale: 0.33
-    meshingSettings:
-      showMeshesInCompanionApp: 1
     faceTrackingSettings:
       maxFPS: 30
       sendVertices: 1
       sendNormals: 1
       sendARKitBlendshapes: 1
-      showFacesInCompanionApp: 1
   packages:
   - displayName: AR Foundation Remote
-    version: 4.7.11
+    version: 4.8.22
     id: com.kyrylokuzyk.arfoundationremote
   - displayName: AR Foundation
     version: 4.0.2
@@ -55,4 +55,4 @@ MonoBehaviour:
     logStartupErrors: 1
     showTelepathyLogs: 0
     showTelepathyWarningsAndErrors: 1
-    printCompanionAppIPsToConsole: 1
+    printCompanionAppIPsToConsole: 0

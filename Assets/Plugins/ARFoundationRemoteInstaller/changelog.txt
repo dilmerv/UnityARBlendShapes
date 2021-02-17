@@ -1,9 +1,31 @@
+## [4.8.22] - 2021-02-03
+### Fixed
+- Fixed camera video rendering in linear color space.
+- Fixed null ref on SceneUnloaded event.
+- Fixed two issues with image tracking: the 'editor image guid not found' and 'image already added'.
+- Fixed: the plugin should not register subsystems if it's not enabled in XR Plugin Management.
+- Fixed: 'Parameter name: _unity_self' error may occur after the meshing scene restart.
+
+## [4.8.11] - 2021-01-20
+### Added
+- Added check for enabled 'Reload Domain' setting.
+### Fixed
+- Proper support for XRManagerSettings.InitializeLoader()/DeinitializeLoader(). 
+- Fixed image tracking with disabled 'Keep Texture at Runtime' setting.
+
+## [4.8.7] - 2021-01-16
+### Added
+- Companion app now can display contents of Editor Game Window!
+### Fixed
+- Fixed: Unity Editor freezes on the next scene start after unsuccessful connection attempt to companion app.
+- Fixed camera video serialization on Android with URP.
+
 ## [4.7.11] - 2020-12-25
 ### Added
 - Image reference libraries can now be embedded into AR Companion app.
 ### Fixed
 - Fixed: ARAnchorManager.anchorsChanged event is not working, hence anchors are not working with ARKit World Map.
-- Fixed: Camera CPU images are not working with Android and AR Foundation < 4.1.1.
+- Fixed: Camera CPU images are not working with Android and AR Foundation 4.0.x.
 - Fixed: eye poses and fixation point have wrong values.
 
 ## [4.7.4] - 2020-12-12

@@ -9,10 +9,10 @@ using Unity.Collections;
 public class BlendShapeVisualizer : MonoBehaviour
 {
     [SerializeField]
-    private BlendShapeMappings blendShapeMappings;
+    private BlendShapeMappings blendShapeMappings = null;
 
     [SerializeField]
-    private SkinnedMeshRenderer skinnedMeshRenderer;
+    private SkinnedMeshRenderer skinnedMeshRenderer = null;
 
     private ARKitFaceSubsystem arKitFaceSubsystem;
 
@@ -61,9 +61,10 @@ public class BlendShapeVisualizer : MonoBehaviour
     void OnEnable()
     {
         var faceManager = FindObjectOfType<ARFaceManager>();
-        if (faceManager != null)
+
+        if (faceManager != null && faceManager?.subsystem != null)
         {
-            arKitFaceSubsystem = (ARKitFaceSubsystem)faceManager.subsystem;
+            arKitFaceSubsystem = (ARKitFaceSubsystem)faceManager?.subsystem;
         }
 
         UpdateVisibility();

@@ -33,6 +33,10 @@ namespace ARFoundationRemote.Editor {
                 applicationIdentifier = removeAppName(applicationIdentifier) + appName;
                 PlayerSettings.productName = appName + removeAppName(PlayerSettings.productName);
                 toggleDefine(arCompanionDefine, true);
+            } else {
+                if (EditorBuildSettings.scenes.Any(_ => _.path.Contains("ARCompanion.unity"))) {
+                    throw new Exception("AR Foundation Editor Remote: please build the companion app via Installer object by pressing 'Install AR Companion App' or 'Build AR Companion and show in folder' button.");
+                }
             }
         }
 
@@ -54,10 +58,6 @@ namespace ARFoundationRemote.Editor {
         static void restoreChanges() {
             PlayerSettings.productName = removeAppName(PlayerSettings.productName);
             applicationIdentifier = removeAppName(applicationIdentifier);
-            disableCompanionAppDefine();
-        }
-
-        static void disableCompanionAppDefine() {
             toggleDefine(arCompanionDefine, false);
         }
 

@@ -6,10 +6,21 @@ using UnityEngine.XR.ARSubsystems;
 public class AREyeManager : MonoBehaviour
 {
     [SerializeField]
-    private GameObject leftEyePrefab;
+    private GameObject leftEyePrefab = null;
 
     [SerializeField]
-    private GameObject rightEyePrefab;
+    private GameObject rightEyePrefab = null;
+
+    [SerializeField]
+    // when this is enabled we copy the rotation from the original eye transforms
+    // and replace the rotation on the new still eye transforms
+    private bool copyRotationFromEyes = false;
+    
+    [SerializeField]
+    private GameObject leftEyeReplacement = null;
+
+    [SerializeField]
+    private GameObject rightEyeReplacement = null;
 
     private ARFace arFace;
 
@@ -26,6 +37,15 @@ public class AREyeManager : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if(copyRotationFromEyes && leftEyeReplacement != null && rightEyeReplacement != null)
+        {
+            leftEyeReplacement.transform.rotation = arFace.leftEye.rotation;
+            rightEyeReplacement.transform.rotation = arFace.rightEye.rotation;
+        }
+    }
+    
     void OnFaceUpdated(ARFaceUpdatedEventArgs args)
     {
         if(arFace.leftEye != null && leftEye == null)
@@ -47,11 +67,11 @@ public class AREyeManager : MonoBehaviour
         {
             if(leftEye != null)
             {
-                leftEye.SetActive(true);
+                leftEye.SetActive(true && !copyRotationFromEyes);
             }
             if(rightEye != null)
             {
-                rightEye.SetActive(true);
+                rightEye.SetActive(true && !copyRotationFromEyes);
             }
         }
     }

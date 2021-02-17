@@ -385,7 +385,9 @@ MonoBehaviour:
   isUserFacing: 0
   enableLightEstimation: 0
   autofocus: 1
-  addCameraBackground: 0
+  enableCameraManager: 1
+  addCameraBackground: 1
+  customCameraMaterial: {fileID: 0}
   arSession: {fileID: 1814005015}
   trackingMode: 2
 --- !u!4 &1777762619
