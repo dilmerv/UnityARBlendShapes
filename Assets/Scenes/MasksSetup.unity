@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -622,6 +622,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Sloth
       objectReference: {fileID: 0}
+    - target: {fileID: 7726413415906968016, guid: 70c34e3f1242e4d90ab55f05609791b3,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b4d2b7b9ff7186447bd5f9eec1b619b7, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70c34e3f1242e4d90ab55f05609791b3, type: 3}
 --- !u!1 &1933946568
