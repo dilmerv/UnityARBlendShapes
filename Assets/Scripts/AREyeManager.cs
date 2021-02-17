@@ -49,10 +49,7 @@ public class AREyeManager : MonoBehaviour
     {
         eyeUpdateTimer += Time.deltaTime;
 
-        if(eyeUpdateTimer < eyeUpdateFrequency) // check if frequency has not been reached
-        {
-            return;
-        }
+        if (eyeUpdateTimer < eyeUpdateFrequency) return; // check if frequency has not been reached
 
         eyeUpdateTimer = 0; // reset timer
 
