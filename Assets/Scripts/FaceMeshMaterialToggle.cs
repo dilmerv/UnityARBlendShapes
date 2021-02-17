@@ -28,11 +28,11 @@ public class FaceMeshMaterialToggle : MonoBehaviour
 
         if(opaqueIsActive)
         {
-            buttonText.text = "Opaque Off";
+            buttonText.text = "Opaque On";
         }
         else
         {
-            buttonText.text = "Opaque On";
+            buttonText.text = "Opaque Off";
         }
 
         var heads = GameObject.FindGameObjectsWithTag("Head");
@@ -44,7 +44,7 @@ public class FaceMeshMaterialToggle : MonoBehaviour
         foreach(GameObject head in heads)
         {
             var meshRenderer = head.GetComponent<SkinnedMeshRenderer>();
-            meshRenderer.material = isOpaqueActive ? transparentFaceMeshMaterial : opaqueFaceMeshMaterial;
+            meshRenderer.material = isOpaqueActive ? opaqueFaceMeshMaterial : transparentFaceMeshMaterial;
         }
     }
 }
