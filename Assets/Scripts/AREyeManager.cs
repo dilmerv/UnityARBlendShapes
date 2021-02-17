@@ -65,14 +65,14 @@ public class AREyeManager : MonoBehaviour
 
     void OnFaceUpdated(ARFaceUpdatedEventArgs args)
     {
-        if(arFace?.leftEye != null && leftEye == null)
+        if(arFace?.leftEye != null && leftEye == null) // only happens the first time to instantiate left eye 
         {
             leftEye = Instantiate(leftEyePrefab, arFace.leftEye);
             leftEye.name = "LeftEye";
             leftEye.SetActive(false);
         }
 
-        if(arFace?.rightEye != null && rightEye == null)
+        if(arFace?.rightEye != null && rightEye == null) // only happens the first time to instantiate right eye 
         {
             rightEye = Instantiate(rightEyePrefab, arFace.rightEye);
             leftEye.name = "RightEye";
@@ -82,14 +82,8 @@ public class AREyeManager : MonoBehaviour
         // check tracking && set visibility
         if(arFace?.trackingState == TrackingState.Tracking && ARSession.state > ARSessionState.Ready)
         {
-            if(leftEye != null)
-            {
-                leftEye.SetActive(true && !copyRotationFromEyes);
-            }
-            if(rightEye != null)
-            {
-                rightEye.SetActive(true && !copyRotationFromEyes);
-            }
+            leftEye?.SetActive(true && !copyRotationFromEyes);
+            rightEye?.SetActive(true && !copyRotationFromEyes);
         }
     }
 
