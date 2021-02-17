@@ -163,6 +163,7 @@ PlayerSettings:
   androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 2.1
   applicationIdentifier:
+    Standalone: com.DilmerGamesLLC.Blendshapes
     iPhone: com.DilmerGamesLLC.Blendshapes
   buildNumber:
     iPhone: 1.0.0
